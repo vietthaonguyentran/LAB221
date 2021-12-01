@@ -29,30 +29,32 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="lbImage" alignment="1" max="32767" attributes="0"/>
-                  <Component id="lbRole" alignment="1" max="32767" attributes="0"/>
-                  <Component id="lbName" alignment="1" min="-2" pref="68" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtName" alignment="0" min="-2" pref="244" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="cbRole" min="-2" pref="88" max="-2" attributes="0"/>
-                          <Component id="rdMale" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="lbImage" alignment="1" max="32767" attributes="0"/>
+                          <Component id="lbRole" alignment="1" max="32767" attributes="0"/>
+                          <Component id="lbName" alignment="1" min="-2" pref="68" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                      <Component id="rdFemale" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnImage" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
+                          <Component id="txtName" alignment="0" min="-2" pref="244" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="rdMale" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                              <Component id="rdFemale" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="txtRole" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Component id="btnImage" alignment="0" min="-2" pref="178" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+                      <Component id="btnOk" min="-2" pref="119" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="57" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="btnUpdate" min="-2" pref="119" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+              <EmptySpace pref="51" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,25 +71,22 @@
                   <Component id="rdMale" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="rdFemale" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbRole" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                  <Component id="cbRole" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lbRole" min="-2" pref="24" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lbImage" min="-2" pref="28" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="btnImage" pref="124" max="32767" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnUpdate" min="-2" pref="33" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtRole" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnImage" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                  <Component id="lbImage" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnOk" min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -108,28 +107,19 @@
         <Property name="text" type="java.lang.String" value="Image"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="btnImage">
+    </Component>
     <Component class="javax.swing.JTextField" name="txtName">
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbRole">
       <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Admin"/>
-            <StringItem index="1" value="Staff"/>
-            <StringItem index="2" value="Worker"/>
-          </StringArray>
-        </Property>
+        <Property name="editable" type="boolean" value="false"/>
       </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="btnUpdate">
+    <Component class="javax.swing.JButton" name="btnOk">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Update"/>
+        <Property name="text" type="java.lang.String" value="OK"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOkActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="rdMale">
@@ -149,10 +139,7 @@
         <Property name="text" type="java.lang.String" value="Female"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnImage">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnImageActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JTextField" name="txtRole">
     </Component>
   </SubComponents>
 </Form>
